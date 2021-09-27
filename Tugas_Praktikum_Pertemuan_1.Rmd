@@ -1,0 +1,94 @@
+---
+title: "Tugas Pertemuan 1"
+author: "Salsabila Lattifa Fikri"
+date: "2/7/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+File ini berisi tugas 1 pada pertemuan 1. Untuk kotak pertama disetiap nomo adalah rumusnya kemudian kotak dibawahnya adalah hasil output ketika di eksekusi.
+
+No.1
+
+```{r}
+n <- 100
+hasil <- n*(n+1)/2
+(hasil)
+```
+Untuk nomor 1 diminta untuk menghitung jumlah dari 100 bilangan positif pertama. Disitu terdapat rumus n*(n+1)/2 untuk menjumlahkan bilangan bulat 1 sampai n dan n pada nomor 1 ini diberi nilai 100 sehingga akan menghitung hasil jumlah bilangan bulat 1 hingga 100. Dan 5050 adalah hasil output dari rumusnya.
+
+
+
+
+No.2
+```{r}
+n <- 1000
+hasil <- n*(n+1)/2
+(hasil)
+```
+Untuk nomor 2 sama dengan nomor 1 namun hanya beda pada nilai n saja. Untuk nomor 2 ini nilai n nya adalah 1000 dan 500500 adalah hasil outputnya.
+
+No.3
+```{r}
+#no 3a
+n <- 1000
+
+#no 3b
+x <- seq(1,n)
+
+#no 3c
+sum(x)
+```
+Untuk nomor 3, pada soal nomor 3a untuk mendeklarasikan dari nilai n yaitu 1000. Kemudian, pada 3b terdapat rumus seq(1,n) dimana untuk membuat daftar bilangan dari 1 sampai 1000 yang kemudian disimpan pada x. Lalu, pada 3c terdapat rumus sum(x) yang artinya bilangan yang sudah dibuat dalam daftar tadi kemudian dijumlahkan dan 500500 adalah hasil outputnya.
+
+
+No.4
+```{r}
+#no 4a
+x <- seq (1,50)
+(x)
+sum(x)
+```
+Untuk nomor 4a, terdapat rumus seq(1,50) untuk membuat daftar bilangan dari 1 sampai 50 kemudian disimpan di x. Setelah itu menjumlahkan semua bilangan yang ada di x dengan menggunakan rumus sum(x).
+```{r}
+#no 4b
+x <- 1:1000
+sample(seq(x))
+sum(sample(seq(x)))
+```
+Untuk nomor 4b, awalnya mendeklarasikan x itu bilangan 1 sampai 1000 kemudian terdapat rumus sample(seq(x)) dimana ada rumus seq(x) untuk membuat daftar bilangan x yaitu dari 1 hingga 1000 kemudian dibuat sample bilangan acar dengan rumus sample(). Setelah itu, sample yang sudah didapatkan tadi dijumlahkan dengan rumus sum().
+
+
+No.5
+```{r}
+x <- 10
+y <- log10(sqrt(100))
+(y)
+```
+Untuk nomor 5, awalnya dilakukan pendeklarasian nilai x yaitu 10 untuk nilai basisnya. Pada nomor 5 ini diminta unutk mengevaluasi fungsi ketika argumen telah diisi dan menggunakan rumus Kemudian, terdapat rumus log10(sqrt(100)) dimana fungsi sqrt(100) untuk mengevaluasi dengan nilai argumen 100. Kemudian, fungsi sqrt() tadi dimasukkan ke fungsi log() untuk menghitung hasil lognya dengan basis x.
+
+No.6
+```{r}
+x <- 20
+
+#no 6a
+is.numeric(log(10^x))
+```
+Pada awal, dideklarasikan untuk x yaitu 20 untuk nantinya dimasukkan ke dalam rumus selanjutnya.
+```{r}
+#no 6b
+is.numeric(log10(x^10))
+```
+
+```{r}
+#no 6c
+is.numeric(log(exp(x)))
+is.numeric(exp(log(x, base = 2)))
+```
+Untuk nomor 6, diminta untuk menentukan dari contoh-contoh yang ada mana yang mengembalikan nilai numerik yang disimpan dalam variabel x. Pada nomor 6 ini menggunakan is.numeric untuk menghasilkan keluaran berupa nilai TRUE atau FALSE.
